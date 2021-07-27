@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
       routes: {
         'login': ( _ ) => LoginScreen(),
         'home': ( _ ) => HomeScreen(),
-      }
+      },
+      theme: ThemeData.light().copyWith(
+        scaffoldBackgroundColor: Colors.grey[300]
+      ),
     );
   }
 }
